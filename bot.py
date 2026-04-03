@@ -80,7 +80,7 @@ def save_query(user_id, username, query):
         print("📥 Saving to DB:", user_id, username, query)
 
         cursor.execute(
-            "INSERT INTO users_queries (user_id, username, query) VALUES (%s, %s, %s)",
+            "INSERT INTO user_queries (user_id, username, query) VALUES (%s, %s, %s)",
             (user_id, username, query)
         )
         conn.commit()
