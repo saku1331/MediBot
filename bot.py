@@ -15,6 +15,8 @@ from telegram.ext import (
     ContextTypes,
 )
 from groq import Groq
+import sys
+print("PYTHON VERSION:", sys.version)
 
 load_dotenv()
 
